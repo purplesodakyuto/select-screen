@@ -1,0 +1,9 @@
+<div class="character">
+    <div class="character__screen" :style="{background: link}">
+    </div>
+    <div class="character__grid">
+        <character-frame @mouseover="hoverImage('lorem ipsum')" v-for="(item, index) in characterList" :key="item.id"
+            @giveName="showName" :character="item"> </character-frame>
+    </div>
+
+</div>
